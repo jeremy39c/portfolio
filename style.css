@@ -64,3 +64,36 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
     text-wrap: balance;
 }
+section {
+    h2 {
+        padding-bottom: 5px;
+        color: oklch(7% 30% 240);
+        border-bottom: 2px solid oklch(7% 30% 240);
+    }
+}
+section#heading {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    section#contact {
+        justify-self: right;
+        text-align: right;
+    }
+    margin-top: 1em;
+    border-bottom: 7px solid oklch(7% 30% 240);
+    h1 {
+        text-align: center;
+        padding-bottom: 5px;
+        color: oklch(7% 30% 240);
+        border-bottom: 2px solid oklch(7% 30% 240);
+    }
+}
+section#objective {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+section#qualifications {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+}
