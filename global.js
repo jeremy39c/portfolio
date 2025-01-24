@@ -11,11 +11,11 @@ function $$(selector, context = document) {
 // currentLink?.classList.add('current');
 
 let pages = [
-    {url: 'index.html', title: 'Home'},
-    {url: 'projects/index.html', title: 'Projects'},
-    {url: 'contact/index.html', title: 'Contact'},
+    {url: '', title: 'Home'},
+    {url: 'projects/', title: 'Projects'},
+    {url: 'contact/', title: 'Contact'},
     {url: 'https://github.com/jeremy39c', title: 'Profile'},
-    {url: 'resume/index.html', title: 'Resume'},
+    {url: 'resume/', title: 'Resume'},
 ];
 let nav = document.createElement('nav');
 document.body.prepend(nav);
