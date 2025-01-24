@@ -1,6 +1,5 @@
 html {
     --color-accent: oklch(49.86% 0.09200000000000001 225);
-    color-scheme: light;
 }
 body {
     /* Set line height to 1.5 times the font size
