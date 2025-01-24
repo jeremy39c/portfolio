@@ -71,8 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 section {
     h2 {
         padding-bottom: 5px;
-        color: oklch(7% 30% 240);
-        border-bottom: 2px solid oklch(7% 30% 240);
+        border-bottom: 2px solid;
     }
 }
 section#heading {
@@ -83,12 +82,11 @@ section#heading {
         text-align: right;
     }
     margin-top: 1em;
-    border-bottom: 7px solid oklch(7% 30% 240);
+    border-bottom: 7px solid;
     h1 {
         text-align: center;
         padding-bottom: 5px;
-        color: oklch(7% 30% 240);
-        border-bottom: 2px solid oklch(7% 30% 240);
+        border-bottom: 2px solid;
     }
 }
 section#objective {
