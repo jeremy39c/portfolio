@@ -1,5 +1,5 @@
 html {
-    --color-accent: oklch(49.86% 0.09200000000000001 225);
+    --color-accent: oklch(49.86% 0.092 225);
     color-scheme: light-dark;
 }
 body {
@@ -34,7 +34,7 @@ nav {
         border-bottom: 0.4em solid var(--color-accent);
         padding: 0.5em;
         padding-bottom: 0em;
-        background-color: color-mix(in oklch, var(--color-accent), canvas 9%);
+        background-color: oklch(19.86% 0.098 225);
     }
 }
 input, textarea, button, select {
