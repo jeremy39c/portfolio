@@ -70,3 +70,14 @@ select.addEventListener('input', function (event) {
 if ("colorScheme" in localStorage) {
     setColorScheme(localStorage.colorScheme);
 }
+
+let form = document.querySelector('form');
+form?.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const data = new FormData(form);
+    let url = `${form.action}?`;
+    for (let [name, value] of data) {
+        url = url + `${name}=${encodeURIComponent(value)}&`;
+    }
+    location.href = url.slice(0, -1);
+});
