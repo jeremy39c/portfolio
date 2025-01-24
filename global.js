@@ -56,11 +56,11 @@ document.body.insertAdjacentHTML(
         </label>
     `
 );
+let select = document.querySelector('select');
 function setColorScheme(colorScheme) {
     document.documentElement.style.setProperty('color-scheme', colorScheme);
-    
+    select.value = colorScheme;
 }
-let select = document.querySelector('select');
 select.addEventListener('input', function (event) {
     console.log('color scheme changed to', event.target.value);
     setColorScheme(event.target.value);
