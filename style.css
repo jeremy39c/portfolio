@@ -34,7 +34,7 @@ nav {
         border-bottom: 0.4em solid var(--color-accent);
         padding: 0.5em;
         padding-bottom: 0em;
-        background-color: oklch(44% 0.03 225);
+        background-color: oklch(44% 0.03 225 / 40%);
     }
 }
 input, textarea, button, select {
