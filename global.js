@@ -56,6 +56,7 @@ document.body.insertAdjacentHTML(
         </label>
     `
 );
+document.documentElement.style.setProperty('color-scheme', 'light dark');
 let select = document.querySelector('select');
 function setColorScheme(colorScheme) {
     document.documentElement.style.setProperty('color-scheme', colorScheme);
