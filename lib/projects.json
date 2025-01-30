@@ -1,74 +1,74 @@
 [
     {
-        "title": "Expository Visualization",
+        "title": "Expository Climate Data Visualization",
         "year": "2025",
-        "image": "Desktop/dsc106-projects/project1/project1-vis.png",
-        "description": "TODO"
+        "image": "./proj-images/climate-vis.png",
+        "description": "A static visualization providing a comparison between 2 U.S. cities and the ideal agricultural climate conditions."
     },
     {
-        "title": "",
+        "title": "Peanut Butter Recipes Analysis",
         "year": "2024",
-        "image": "",
-        "description": ""
+        "image": "./proj-images/recipes-image.png",
+        "description": "An analysis of a recipes dataset, with a focus on the use of peanut butter as an ingredient."
     },
     {
-        "title": "",
-        "year": "",
-        "image": "",
-        "description": "T"
+        "title": "Language Models Project",
+        "year": "2024",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Development of various language models."
     },
     {
-        "title": "",
-        "year": "",
-        "image": "",
-        "description": ""
+        "title": "Loan Applications Project",
+        "year": "2024",
+        "image": "./proj-images/loans-image.png",
+        "description": "Analysis of a small loans dataset from LendingClub."
     },
     {
-        "title": "",
-        "year": "",
-        "image": "",
-        "description": ""
+        "title": "Gradebook Project",
+        "year": "2024",
+        "image": "./proj-images/gradebook-image.png",
+        "description": "Exploration and analysis of a fictional data science course gradebook."
     },
     {
-        "title": "",
-        "year": "",
-        "image": "",
-        "description": ""
+        "title": "Lorem ipsum dolor sit.",
+        "year": "2024",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
     },
     {
-        "title": "",
-        "year": "",
-        "image": "",
-        "description": ""
+        "title": "Lorem ipsum dolor sit.",
+        "year": "2024",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
     },
     {
-        "title": "",
-        "year": "",
-        "image": "",
-        "description": ""
+        "title": "Lorem ipsum dolor sit.",
+        "year": "2023",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
     },
     {
-        "title": "",
-        "year": "",
-        "image": "",
-        "description": ""
+        "title": "Lorem ipsum dolor sit.",
+        "year": "2023",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
     },
     {
-        "title": "",
-        "year": "",
-        "image": "",
-        "description": ""
+        "title": "Lorem ipsum dolor sit.",
+        "year": "2023",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
     },
     {
-        "title": "",
-        "year": "",
-        "image": "",
-        "description": ""
+        "title": "Lorem ipsum dolor sit.",
+        "year": "2023",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
     },
     {
-        "title": "",
-        "year": "",
-        "image": "",
-        "description": ""
+        "title": "Lorem ipsum dolor sit.",
+        "year": "2023",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
     }
 ]
