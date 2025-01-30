@@ -2,13 +2,13 @@
     {
         "title": "Expository Climate Data Visualization",
         "year": "2025",
-        "image": "../images/climate-vis.png",
+        "image": "/images/climate-vis.png",
         "description": "A static visualization providing a comparison between 2 U.S. cities and the ideal agricultural climate conditions."
     },
     {
         "title": "Peanut Butter Recipes Analysis",
         "year": "2024",
-        "image": "../images/recipes-image.png",
+        "image": "/images/recipes-image.png",
         "description": "An analysis of a recipes dataset, with a focus on the use of peanut butter as an ingredient."
     },
     {
@@ -20,13 +20,13 @@
     {
         "title": "Loan Applications Project",
         "year": "2024",
-        "image": "../images/loans-image.png",
+        "image": "/images/loans-image.png",
         "description": "Analysis of a small loans dataset from LendingClub."
     },
     {
         "title": "Gradebook Project",
         "year": "2024",
-        "image": "../images/gradebook-image.png",
+        "image": "/images/gradebook-image.png",
         "description": "Exploration and analysis of a fictional data science course gradebook."
     },
     {
