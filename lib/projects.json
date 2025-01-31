@@ -30,45 +30,45 @@
         "description": "Exploration and analysis of a fictional data science course gradebook."
     },
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "(PLACEHOLDER) Social Media Sentiment Analysis",
         "year": "2024",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+        "description": "Sentiment analysis of social media posts and comments."
     },
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "(PLACEHOLDER) Movie Reccomendation System",
         "year": "2024",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+        "description": "Development of system to recommend movies based on user data."
     },
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "(PLACEHOLDER) Stock Price Predictions",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+        "description": "Development of system to predict stock prices based on performance history."
     },
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "(PLACEHOLDER) Music Recommendation System",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+        "description": "Developpment of system to recommend music based on user history."
     },
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "(PLACEHOLDER) Fake News Detection",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+        "description": "Use of classifiers to distinguish between real and fake news articles."
     },
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "(PLACEHOLDER) Customer Segmentation",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+        "description": "K-means clustering to categorize customers based on features."
     },
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "(PLACEHOLDER) California Native Plants Analysis",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+        "description": "Analysis of California native plant species data."
     }
 ]
