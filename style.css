@@ -112,7 +112,7 @@ label.color-scheme {
     dl {
         display: grid;
         grid-template-columns: repeat(8, auto);
-        justify-content: space-evenly;
+        justify-content: space-between;
         dt {
             border-left: 1px solid;
             border-left-color: var(--border-color);
