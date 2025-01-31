@@ -105,6 +105,7 @@ label.color-scheme {
     right: 1rem;
 }
 #home-projects-title {
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 #profile-stats {
