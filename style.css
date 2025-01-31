@@ -104,6 +104,9 @@ label.color-scheme {
     top: 1rem;
     right: 1rem;
 }
+#home-projects-title {
+    margin-bottom: 10px;
+}
 #profile-stats {
     dl {
         display: grid;
