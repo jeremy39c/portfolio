@@ -30,43 +30,43 @@
         "description": "Exploration and analysis of a fictional data science course gradebook."
     },
     {
-        "title": "(PLACEHOLDER) Social Media Sentiment Analysis",
+        "title": "Social Media Sentiment Analysis",
         "year": "2024",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Sentiment analysis of social media posts and comments."
     },
     {
-        "title": "(PLACEHOLDER) Movie Reccomendation System",
+        "title": "Movie Reccomendation System",
         "year": "2024",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Development of system to recommend movies based on user data."
     },
     {
-        "title": "(PLACEHOLDER) Stock Price Predictions",
+        "title": "Stock Price Predictions",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Development of system to predict stock prices based on performance history."
     },
     {
-        "title": "(PLACEHOLDER) Music Recommendation System",
+        "title": "Music Recommendation System",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Developpment of system to recommend music based on user history."
     },
     {
-        "title": "(PLACEHOLDER) Fake News Detection",
+        "title": "Fake News Detection",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Use of classifiers to distinguish between real and fake news articles."
     },
     {
-        "title": "(PLACEHOLDER) Customer Segmentation",
+        "title": "Customer Segmentation",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "K-means clustering to categorize customers based on features."
     },
     {
-        "title": "(PLACEHOLDER) California Native Plants Analysis",
+        "title": "California Native Plants Analysis",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Analysis of California native plant species data."
