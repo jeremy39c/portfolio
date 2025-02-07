@@ -124,5 +124,10 @@ label.color-scheme {
             padding-right: 0.3em;
         }
     }
+}
+#projects-pie-plot {
+    max-width: 20em;
+    margin-block: 2em;
 
+    overflow: visible;
 }
