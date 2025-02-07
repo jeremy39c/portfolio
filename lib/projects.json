@@ -31,13 +31,13 @@
     },
     {
         "title": "Social Media Sentiment Analysis",
-        "year": "2024",
+        "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Sentiment analysis of social media posts and comments."
     },
     {
         "title": "Movie Reccomendation System",
-        "year": "2024",
+        "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Development of system to recommend movies based on user data."
     },
@@ -61,13 +61,13 @@
     },
     {
         "title": "Customer Segmentation",
-        "year": "2023",
+        "year": "2022",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "K-means clustering to categorize customers based on features."
     },
     {
         "title": "California Native Plants Analysis",
-        "year": "2023",
+        "year": "2022",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Analysis of California native plant species data."
     }
