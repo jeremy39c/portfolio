@@ -131,3 +131,28 @@ label.color-scheme {
 
     overflow: visible;
 }
+.container {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+.legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    gap: 0.5em;
+    border: 0.5px solid;
+    padding: 0.9em;
+    margin-bottom: 1.5em;
+    flex: 1;
+}
+.swatch {
+    height: 17px;
+    width: 17px;
+    background-color: var(--color);
+    border-radius: 31%;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+}
