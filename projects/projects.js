@@ -1,7 +1,7 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm";
 import { fetchJSON, renderProjects } from '../global.js';
 
-let projects = await fetchJSON('../lib/projects.json');
+const projects = await fetchJSON('../lib/projects.json');
 const projectsContainer = document.querySelector('.projects');
 
 renderProjects(projects, projectsContainer, 'h2');
@@ -84,7 +84,6 @@ function renderPieChart(projectsGiven) {
             else {
                 let filteredProjects = projectsGiven.filter((project) => project.year == newData[selectedIndex].label);
                 renderProjects(filteredProjects, projectsContainer, 'h2');
-                projects = filteredProjects;
             }
         }));
     });
