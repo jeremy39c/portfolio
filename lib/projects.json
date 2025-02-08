@@ -36,7 +36,7 @@
         "description": "Sentiment analysis of social media posts and comments."
     },
     {
-        "title": "Movie Reccomendation System",
+        "title": "Movie Recommendation System",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Development of system to recommend movies based on user data."
@@ -51,7 +51,7 @@
         "title": "Music Recommendation System",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-        "description": "Developpment of system to recommend music based on user history."
+        "description": "Development of system to recommend music based on user history."
     },
     {
         "title": "Fake News Detection",

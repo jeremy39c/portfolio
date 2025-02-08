@@ -130,6 +130,15 @@ label.color-scheme {
     margin-block: 2em;
 
     overflow: visible;
+
+    &:has(path:hover) {
+        path:not(:hover) {
+            opacity: 0.5;
+        }
+    }
+    path {
+        transition: 300ms;
+    }
 }
 .container {
     display: flex;
@@ -155,4 +164,16 @@ label.color-scheme {
     display: flex;
     align-items: center;
     gap: 0.25em;
+}
+.searchBar {
+    margin-bottom: 1em;
+    padding: 0.3em;
+    width: 100%;
+}
+.selected {
+    --color: oklch(83% 20% 280) !important;
+
+    &:is(path) {
+        fill: var(--color);
+    }
 }
