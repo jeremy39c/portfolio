@@ -1,9 +1,10 @@
-on:
-  deployment
+on: deployment
 
 jobs:
   build:
     
+    runs_on: macos-latest
+
     steps:
     - name: Checkout
       uses: actions/checkout@v4
