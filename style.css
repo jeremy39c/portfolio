@@ -125,6 +125,21 @@ label.color-scheme {
         }
     }
 }
+dl.stats {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    justify-content: space-between;
+    dt {
+        border-left: 1px solid;
+        border-left-color: var(--border-color);
+        padding-left: 0.3em;
+    }
+    dd {
+        border-right: 1px solid;
+        border-right-color: var(--border-color);
+        padding-right: 0.3em;
+    }
+}
 #projects-pie-plot {
     max-width: 20em;
     margin-block: 2em;
