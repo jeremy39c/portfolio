@@ -2,7 +2,8 @@
 
 jobs:
   build:
-
+    
+    steps:
     - name: Checkout
       uses: actions/checkout@v4
       with:
@@ -23,7 +24,7 @@ jobs:
         git push
 
 GITHUB_TOKEN:
-- permissions:
-  contents: write
-  pages: write
-  id-token: write
+  permissions:
+    contents: write
+    pages: write
+    id-token: write
