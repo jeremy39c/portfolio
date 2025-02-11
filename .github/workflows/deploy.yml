@@ -25,8 +25,7 @@ jobs:
         git commit -m "Update code statistics" || echo "No changes to commit"
         git push
 
-GITHUB_TOKEN:
-  permissions:
-    contents: write
-    pages: write
-    id-token: write
+permissions:
+  contents: write
+  pages: write
+  id-token: write
