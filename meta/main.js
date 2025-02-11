@@ -38,7 +38,9 @@ function processCommits() {
 
             Object.defineProperty(ret, 'lines', {
                 value: lines,
-                // Other options to set (configurable, writable, enumerable)
+                enumerable: false,
+                configurable: false,
+                writable: false,
             });
 
             return ret;
