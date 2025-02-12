@@ -192,3 +192,6 @@ dl.stats {
         fill: var(--color);
     }
 }
+.gridlines {
+    opacity: 0.17;
+}
