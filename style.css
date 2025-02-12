@@ -195,3 +195,21 @@ dl.stats {
 .gridlines {
     opacity: 0.17;
 }
+dl.info {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* TODO */
+}
+.tooltip {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+}
+circle {
+    transition: 200ms;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+circle:hover {
+    transform: scale(1.5);
+}

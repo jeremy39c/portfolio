@@ -114,7 +114,7 @@ function createScatterplot() {
     const gridlines = svg
         .append('g')
         .attr('class', 'gridlines')
-        .attr('transform', `translate(${usableArea.left}, 0`);
+        .attr('transform', `translate(${usableArea.left}, 0)`);
     
     gridlines.call(d3.axisLeft(yScale).tickFormat('').tickSize(-usableArea.width));
 
@@ -132,4 +132,16 @@ function createScatterplot() {
         .append('g')
         .attr('transform', `translate(${usableArea.left}, 0)`)
         .call(yAxis);
+}
+function updateTooltipContent(commit) {
+    const link = document.getElementById('commit-link');
+    const date = document.getElementById('commit-date');
+  
+    if (Object.keys(commit).length === 0) return;
+  
+    link.href = commit.url;
+    link.textContent = commit.id;
+    date.textContent = commit.datetime?.toLocaleString('en', {
+      dateStyle: 'full',
+    });
 }
