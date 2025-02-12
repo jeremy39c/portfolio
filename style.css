@@ -153,6 +153,7 @@ dl.stats {
     }
     path {
         transition: 300ms;
+        cursor: pointer;
     }
 }
 .container {
@@ -197,13 +198,31 @@ dl.stats {
 }
 dl.info {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    /* TODO */
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    margin: 0;
+    padding: 1.5em;
+    dt {
+        opacity: 0.75;
+        font-size: 77%;
+    }
+    transition-duration: 500ms;
+    transition-property: opacity, visibility;
+}
+dl.info[hidden]:not(:hover, :focus-within) {
+    opacity: 0;
+    visibility: hidden;
 }
 .tooltip {
     position: fixed;
     top: 1em;
     left: 1em;
+    box-shadow: 2px 5px 13px 3px oklch(77% 0.015 240);
+    border-radius: 48%;
+    backdrop-filter: blur(13px);
+    font-size: 70%;
+    width: fit-content;
+    height: fit-content;
 }
 circle {
     transition: 200ms;
@@ -212,4 +231,7 @@ circle {
 }
 circle:hover {
     transform: scale(1.5);
+}
+circle {
+    cursor: pointer;
 }
