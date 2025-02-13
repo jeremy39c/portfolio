@@ -90,6 +90,11 @@ function updateTooltipPosition(event) {
     tooltip.style.left =   `${event.clientX}px`;
     tooltip.style.top =   `${event.clientY}px`;
 }
+function brushSelector() {
+    const svg = document.querySelector('svg');
+    d3.select(svg).call(d3.brush());
+    d3.select(svg).selectAll('.dots, .overlay ~ *').raise();
+}
 function createScatterplot() {
     const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
     
@@ -101,7 +106,7 @@ function createScatterplot() {
         .append('svg')
         .attr('viewBox', `0 0 ${width} ${height}`)
         .style('overflow', 'visible');
-
+    
     const xScale = d3
         .scaleTime()
         .domain(d3.extent(commits, (d) => d.datetime))
@@ -174,4 +179,6 @@ function createScatterplot() {
         .append('g')
         .attr('transform', `translate(${usableArea.left}, 0)`)
         .call(yAxis);
+    
+    brushSelector();
 }
