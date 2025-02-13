@@ -27,7 +27,7 @@ function processCommits() {
             let { author, date, time, timezone, datetime } = first;
             let ret = {
                 id: commit,
-                url: 'https://github.com/vis-society/lab-7/commit/' + commit,
+                url: 'https://github.com/jeremy39c/portfolio/commit/' + commit,
                 author,
                 date,
                 time,
@@ -91,6 +91,8 @@ function updateTooltipPosition(event) {
     tooltip.style.top =   `${event.clientY}px`;
 }
 function createScatterplot() {
+    const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
+    
     const width = 1000;
     const height = 600;
 
@@ -108,22 +110,31 @@ function createScatterplot() {
 
     const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
 
+    const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
+    const rScale = d3.scaleSqrt()
+        .domain([minLines, maxLines])
+        .range([5, 30]);
+
     const dots = svg.append('g').attr('class', 'dots');
 
     dots
         .selectAll('circle')
-        .data(commits)
+        .data(sortedCommits)
         .join('circle')
         .attr('cx', (d) => xScale(d.datetime))
         .attr('cy', (d) => yScale(d.hourFrac))
         .attr('r', 5)
         .attr('fill', 'steelblue')
-        .on('mouseenter', (event, commit) => {
+        .attr('r', (d) =>rScale(d.totalLines))
+        .style('fill-opacity', 0.7)
+        .on('mouseenter', function (event, commit) {
+            d3.select(event.currentTarget).style('fill-opacity', 1);
             updateTooltipContent(commit);
             updateTooltipVisibility(true);
             updateTooltipPosition(event);
         })
-        .on('mouseleave', () => {
+        .on('mouseleave', function (event) {
+            d3.select(event.currentTarget).style('fill-opacity', 0.7);
             updateTooltipContent({});
             updateTooltipVisibility(false);
         });

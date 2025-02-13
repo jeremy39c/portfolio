@@ -129,6 +129,7 @@ dl.stats {
     display: grid;
     grid-template-columns: repeat(10, auto);
     justify-content: space-between;
+    margin-bottom: 2em;
     dt {
         border-left: 1px solid;
         border-left-color: var(--border-color);
@@ -192,6 +193,9 @@ dl.stats {
     &:is(path) {
         fill: var(--color);
     }
+}
+svg {
+    margin-top: 0.5em;
 }
 .gridlines {
     opacity: 0.17;
