@@ -64,11 +64,23 @@ function displayStats() {
     dl.append('dt').text('Files');
     dl.append('dd').text(d3.group(data, d => d.file).size);
     
-    dl.append('dt').text('Max depth');
-    dl.append('dd').text(d3.max(data, d => d.depth));
+    const fileLengths = d3.rollups(
+        data,
+        (v) => d3.max(v, (v) => v.line),
+        (d) => d.file
+    );
+    const averageFileLength = d3.mean(fileLengths, (d) => d[1]);
+    dl.append('dt').text('Average file length');
+    dl.append('dd').text(averageFileLength);
 
-    dl.append('dt').text('Average depth');
-    dl.append('dd').text(d3.mean(data, d => d.depth));
+    const workByPeriod = d3.rollups(
+        data,
+        (v) => v.length,
+        (d) => new Date(d.datetime).toLocaleString('en', { dayPeriod: 'short' })
+    );
+    const maxPeriod = d3.greatest(workByPeriod, (d) => d[1])?.[0];
+    dl.append('dt').text('Most work done ... ');
+    dl.append('dd').text(maxPeriod);
 }
 function updateTooltipContent(commit) {
     const link = document.getElementById('commit-link');
