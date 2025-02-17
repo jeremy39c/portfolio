@@ -11,12 +11,12 @@
         "year": "2025",
         "image": "https://jeremy39c.github.io/portfolio/lib/proj-images/climate-vis.png",
         "description": "A static visualization providing a comparison between 2 U.S. cities and the ideal agricultural climate conditions.",
-        "url": ""
+        "url": "N/A"
     },
     {
         "title": "Peanut Butter Recipes Analysis",
         "year": "2024",
-        "image": "https://jeremy39c.github.io/portfolio/lib/proj-images/recipe-image.png",
+        "image": "https://jeremy39c.github.io/portfolio/lib/proj-images/recipes-image.png",
         "description": "An analysis of a recipes dataset, with a focus on the use of peanut butter as an ingredient.",
         "url": "https://github.com/jeremy39c/peanut-butter-recipes-analysis"
     },
@@ -25,62 +25,62 @@
         "year": "2024",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Development of various language models.",
-        "url": ""
+        "url": "N/A"
     },
     {
         "title": "Loan Applications Project",
         "year": "2024",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Analysis of a small loans dataset from LendingClub.",
-        "url": ""
+        "url": "N/A"
     },
     {
         "title": "Gradebook Project",
         "year": "2024",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Exploration and analysis of a fictional data science course gradebook.",
-        "url": ""
+        "url": "N/A"
     },
     {
         "title": "Social Media Sentiment Analysis",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Sentiment analysis of social media posts and comments.",
-        "url": ""
+        "url": "N/A"
     },
     {
         "title": "Movie Recommendation System",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Development of system to recommend movies based on user data.",
-        "url": ""
+        "url": "N/A"
     },
     {
         "title": "Stock Price Predictions",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Development of system to predict stock prices based on performance history.",
-        "url": ""
+        "url": "N/A"
     },
     {
         "title": "Fake News Detection",
         "year": "2023",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Use of classifiers to distinguish between real and fake news articles.",
-        "url": ""
+        "url": "N/A"
     },
     {
         "title": "Customer Segmentation",
         "year": "2022",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "K-means clustering to categorize customers based on features.",
-        "url": ""
+        "url": "N/A"
     },
     {
         "title": "California Native Plants Analysis",
         "year": "2022",
         "image": "https://dsc106.com/labs/lab02/images/empty.svg",
         "description": "Analysis of California native plant species data.",
-        "url": ""
+        "url": "N/A"
     }
 ]

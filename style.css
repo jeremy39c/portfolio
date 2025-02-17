@@ -52,6 +52,10 @@ input, textarea, button, select {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
     gap: 2em;
+    img {
+        height: 166px;
+        width: 333px;
+    }
 }
 article {
     display: grid;
