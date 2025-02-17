@@ -103,7 +103,9 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
         article.innerHTML = `
             <${headingLevel}>${proj.title}</${headingLevel}>
             <img src="${proj.image}" alt="${proj.title}">
-            <p>${proj.description} (c. ${proj.year})
+            <p>${proj.description} 
+            <br>
+            (c. ${proj.year})
             <br>
             <a href=${proj.url === 'N/A' 
                         ? 'https://jeremy39c.github.io/portfolio/projects/' 
