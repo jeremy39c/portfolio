@@ -2,21 +2,21 @@
     {
         "title": "Gobybike: Interactive Map of Bike Traffic Data",
         "year": "2025",
-        "image": "./proj-images/gobybike-image.png",
+        "image": "https://jeremy39c.github.io/portfolio/lib/proj-images/gobybike-image.png",
         "description": "An immersive, interactive map visualization of bike traffic for Boston area bike stations during different times of the day; includes zooming and panning, traffic labels and coloring, and a slider for time filtering",
         "url": "https://jeremy39c.github.io/Gobybike/"
     },
     {
         "title": "Expository Climate Data Visualization",
         "year": "2025",
-        "image": "./proj-images/climate-vis.png",
+        "image": "https://jeremy39c.github.io/portfolio/lib/proj-images/climate-vis.png",
         "description": "A static visualization providing a comparison between 2 U.S. cities and the ideal agricultural climate conditions.",
         "url": ""
     },
     {
         "title": "Peanut Butter Recipes Analysis",
         "year": "2024",
-        "image": "./proj-imgaes/recipes-image.png",
+        "image": "https://jeremy39c.github.io/portfolio/lib/proj-images/recipe-image.png",
         "description": "An analysis of a recipes dataset, with a focus on the use of peanut butter as an ingredient.",
         "url": "https://github.com/jeremy39c/peanut-butter-recipes-analysis"
     },
