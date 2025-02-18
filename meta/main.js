@@ -85,6 +85,9 @@ function displayStats() {
 function updateTooltipContent(commit) {
     const link = document.getElementById('commit-link');
     const date = document.getElementById('commit-date');
+    const time = document.getElementById('commit-time');
+    const author = document.getElementById('commit-author');
+    const linesEdited = document.getElementById('commit-lines-edited');
   
     if (Object.keys(commit).length === 0) return;
   
@@ -93,6 +96,11 @@ function updateTooltipContent(commit) {
     date.textContent = commit.datetime?.toLocaleString('en', {
       dateStyle: 'full',
     });
+    time.textContent = commit.time?.toLocaleString('en', {
+        dateStyle: 'full',
+    });
+    author.textContent = commit.author;
+    linesEdited.textContent = commit.totalLines;
 }
 function updateTooltipVisibility(isVisible) {
     const tooltip = document.getElementById('commit-tooltip');
@@ -101,8 +109,8 @@ function updateTooltipVisibility(isVisible) {
 updateTooltipVisibility(false);
 function updateTooltipPosition(event) {
     const tooltip = document.getElementById('commit-tooltip');
-    tooltip.style.left =   `${event.clientX}px`;
-    tooltip.style.top =   `${event.clientY}px`;
+    tooltip.style.left =   `${event.clientX + 13}px`;
+    tooltip.style.top =   `${event.clientY + 13}px`;
 }
 
 let brushSelection = null;
