@@ -2,6 +2,7 @@ let data = [];
 let commits = [];
 let xScale;
 let yScale;
+let selectedCommits = [];
 
 async function loadData() {
     data = await d3.csv('loc.csv', (row) => ({
@@ -113,30 +114,25 @@ function updateTooltipPosition(event) {
     tooltip.style.top =   `${event.clientY + 13}px`;
 }
 
-let brushSelection = null;
+function brushed(evt) {
+    let brushSelection = evt.selection;
+    selectedCommits = !brushSelection
+        ? []
+        : commits.filter((commit) => {
+            let min = { x: brushSelection[0][0], y: brushSelection[0][1] };
+            let max = { x: brushSelection[1][0], y: brushSelection[1][1] };
+            let x = xScale(commit.date);
+            let y = yScale(commit.hourFrac);
 
-function brushed(event) {
-    brushSelection = event.selection;
-    updateSelection();
-    updateSelectionCount();
-    updateLanguageBreakdown();
+            return x >= min.x && x <= max.x && y >= min.y && y <= max.y;
+        });
+    // updateSelection();
+    // updateSelectionCount();
+    // updateLanguageBreakdown();
 }
 
 function isCommitSelected(commit) {
-    if (!brushSelection) {
-        return false;
-    }
-    const min = {
-        x: brushSelection[0][0],
-        y: brushSelection[0][1]
-    };
-    const max = {
-        x: brushSelection[1][0],
-        y: brushSelection[1][1]
-    };
-    const x = xScale(commit.date);
-    const y = yScale(commit.hourFrac);
-    return x >= min.x && x <= max.x && y >= min.y && y <= max.y;
+    return selectedCommits.includes(commit);
 }
 
 function updateSelection() {
@@ -144,7 +140,7 @@ function updateSelection() {
 }
 
 function updateSelectionCount() {
-    const selectedCommits = brushSelection
+    selectedCommits = brushSelection
         ? commits.filter(isCommitSelected)
         : [];
     
@@ -233,13 +229,13 @@ function createScatterplot() {
         .attr('r', (d) =>rScale(d.totalLines))
         .style('fill-opacity', 0.7)
         .on('mouseenter', function (event, commit) {
-            d3.select(event.currentTarget).style('fill-opacity', 1);
+            d3.select(event.currentTarget).classed('selected', true).style('fill-opacity', 1);
             updateTooltipContent(commit);
             updateTooltipVisibility(true);
             updateTooltipPosition(event);
         })
         .on('mouseleave', function (event) {
-            d3.select(event.currentTarget).style('fill-opacity', 0.7);
+            d3.select(event.currentTarget).classed('selected', false).style('fill-opacity', 0.7);
             updateTooltipContent({});
             updateTooltipVisibility(false);
         });
