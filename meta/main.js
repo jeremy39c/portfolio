@@ -271,3 +271,19 @@ function createScatterplot() {
     
     brushSelector();
 }
+
+let commitProgress = 100;
+
+let timeScale = d3.scaleTime([d3.min(commits, d => d.datetime), d3.max(commits, d=> d.datetime)], [0, 100]);
+let commitMaxTime = timeScale.invert(commitProgress);
+
+const timeSlider = document.getElementById('time-slider');
+const selectedTime = document.select('#selected-time');
+
+selectedTime.textContent = timeScale.invert(commitProgress).toLocaleString();
+
+// function updateTimeDisplay() {
+    // selectedTime.textContent = commitMaxTime.toLocaleString('en-US', { dateStyle: 'long', timeStyle: 'short' });
+// }
+// timeSlider.addEventListener('input', updateTimeDisplay);
+// updateTimeDisplay();
