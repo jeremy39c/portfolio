@@ -126,9 +126,9 @@ function brushed(evt) {
 
             return x >= min.x && x <= max.x && y >= min.y && y <= max.y;
         });
-    // updateSelection();
-    // updateSelectionCount();
-    // updateLanguageBreakdown();
+    updateSelection();
+    updateSelectionCount();
+    updateLanguageBreakdown();
 }
 
 function isCommitSelected(commit) {
@@ -140,10 +140,6 @@ function updateSelection() {
 }
 
 function updateSelectionCount() {
-    selectedCommits = brushSelection
-        ? commits.filter(isCommitSelected)
-        : [];
-    
     const countElement = document.getElementById('selection-count');
     countElement.textContent = `${
         selectedCommits.length || 'No'
@@ -153,9 +149,6 @@ function updateSelectionCount() {
 }
 
 function updateLanguageBreakdown() {
-    const selectedCommits = brushSelection
-        ? commits.filter(isCommitSelected)
-        : [];
     const container = document.getElementById('language-breakdown');
 
     if (selectedCommits.length === 0) {
