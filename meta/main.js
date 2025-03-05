@@ -3,6 +3,7 @@ let commits = [];
 let xScale;
 let yScale;
 let selectedCommits = [];
+let filteredCommits = [];
 
 async function loadData() {
     data = await d3.csv('loc.csv', (row) => ({
@@ -184,12 +185,11 @@ function brushSelector() {
     d3.select(svg).call(d3.brush().on('start brush end', brushed));
     d3.select(svg).selectAll('.dots, .overlay ~ *').raise();
 }
-function createScatterplot() {
-    const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
-    
+function updateScatterplot(commits) {
     const width = 1000;
     const height = 600;
 
+    d3.select('svg').remove();
     const svg = d3
         .select('#chart')
         .append('svg')
@@ -198,22 +198,24 @@ function createScatterplot() {
     
     xScale = d3
         .scaleTime()
-        .domain(d3.extent(commits, (d) => d.datetime))
+        .domain(d3.extent(filteredCommits, (d) => d.datetime))
         .range([0, width])
         .nice();
 
     yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
+
+    svg.selectAll('g').remove(0);
+    const dots = svg.append('g').attr('class', 'dots');
 
     const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
     const rScale = d3.scaleSqrt()
         .domain([minLines, maxLines])
         .range([2, 30]);
 
-    const dots = svg.append('g').attr('class', 'dots');
-
+    dots.selectAll('circle').remove();
     dots
         .selectAll('circle')
-        .data(sortedCommits)
+        .data(filteredCommits)
         .join('circle')
         .attr('cx', (d) => xScale(d.datetime))
         .attr('cy', (d) => yScale(d.hourFrac))
@@ -287,6 +289,9 @@ function createScatterplot() {
         commitProgress = Number(timeSlider.value);
     
         selectedTime.textContent = timeScale.invert(commitProgress).toLocaleString('en-US', options);
+
+        filterCommitsByTime();
+        updateScatterplot(filteredCommits);
     }
     timeSlider.addEventListener('input', updateTimeDisplay);
     updateTimeDisplay();
