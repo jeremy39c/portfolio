@@ -17,15 +17,11 @@
     <h3>Summary</h3>
     <div id="stats"></div>
     <h2>Commits by time of day</h2>
-    <header>
-        <div id="slider-display">
-            <label for="time-slider">Show commits until:</label>
-            <input type="range" id="time-slider" min="0" max="100" value="0">
-        </div>
-        <div id="time-display">
-            <time id="selected-time"></time>
-        </div>
-    </header>
+    <div id="slider-display">
+        <label for="time-slider">Show commits until:</label>
+        <input type="range" id="time-slider" min="0" max="100" value="0">
+        <time id="selected-time">No time selected</time>
+    </div>
     <div id="chart"></div>
     <dl id="commit-tooltip" class="info tooltip">
         <dt>Commit</dt>

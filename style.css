@@ -253,27 +253,11 @@ rect.selection {
     stroke-dasharray: 5 3;
     animation: marching-ants 2s linear infinite;
 }
-
-header {
-    display: block;
-    width: 33%;
-    gap: 1em;
-    margin-left: auto;
-    #slider-display {
-        display: flex;
-        gap: 5px;
-        #time-slider {
-            width: 75%;
-            justify-content: flex-end;
-            margin: 0px;
-        }
-    }
-    #time-display {
-        display: block;
-        justify-self: flex-end;
-    }
-    #any-time {
-        color: #999;
-        font-style: italic;
-    }
+#slider-display {
+    display: flex;
+    flex: 1;
+    align-items: baseline;
+    #selected-time {
+        margin-left: auto;
+    } 
 }
