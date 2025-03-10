@@ -20,7 +20,7 @@ async function loadData() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     await loadData();
-    createScatterplot();
+    updateScatterplot(commits);
 });
 
 function processCommits() {
@@ -119,7 +119,7 @@ function brushed(evt) {
     let brushSelection = evt.selection;
     selectedCommits = !brushSelection
         ? []
-        : commits.filter((commit) => {
+        : filteredCommits.filter((commit) => {
             let min = { x: brushSelection[0][0], y: brushSelection[0][1] };
             let max = { x: brushSelection[1][0], y: brushSelection[1][1] };
             let x = xScale(commit.date);
@@ -185,7 +185,7 @@ function brushSelector() {
     d3.select(svg).call(d3.brush().on('start brush end', brushed));
     d3.select(svg).selectAll('.dots, .overlay ~ *').raise();
 }
-function updateScatterplot(commits) {
+function updateScatterplot(filteredCommits) {
     const width = 1000;
     const height = 600;
 
@@ -276,8 +276,6 @@ function updateScatterplot(commits) {
     let commitProgress = 100;
 
     let timeScale = d3.scaleTime([d3.min(commits, d => d.datetime), d3.max(commits, d => d.datetime)], [0, 100]);
-    let commitMaxTime = timeScale.invert(commitProgress);
-
     const timeSlider = document.getElementById('time-slider');;
     const selectedTime = document.getElementById('selected-time');
     const options = {
@@ -285,14 +283,17 @@ function updateScatterplot(commits) {
         timeStyle: 'short',
     };
 
+    function filterCommitsByTime() {
+        let commitMaxTime = timeScale.invert(commitProgress);
+        filteredCommits = commits.filter(d => d.datetime < commitMaxTime);
+    }
     function updateTimeDisplay() {
         commitProgress = Number(timeSlider.value);
     
         selectedTime.textContent = timeScale.invert(commitProgress).toLocaleString('en-US', options);
-
+    
         filterCommitsByTime();
         updateScatterplot(filteredCommits);
     }
     timeSlider.addEventListener('input', updateTimeDisplay);
-    updateTimeDisplay();
 }
